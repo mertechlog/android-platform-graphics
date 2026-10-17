@@ -362,9 +362,9 @@ Paths are AOSP/BSP references, not guaranteed runtime installation paths. Vendor
 
 Typical runtime names include libhwui.so, libgui.so, libEGL.so, libGLESv2.so, libGLESv3.so and libvulkan.so. librenderengine is a build library used by SurfaceFlinger; do not assume every build installs it as a separate shared object. Skia can be statically linked into clients; do not assume libskia.so must exist.
 
-## 16. SA8195 automotive target and verification
+## 16. automotive target and verification
 
-Qualcomm display code uses terms such as MDSS (broader display subsystem), SDE (Snapdragon Display Engine) and DPU (display-processing block). This document does not assert an exact SA8195 DPU IP revision: verify the active BSP and hardware.
+Qualcomm display code uses terms such as MDSS (broader display subsystem), SDE (Snapdragon Display Engine) and DPU (display-processing block). This document does not assert an exact DPU IP revision: verify the active BSP and hardware.
 
 If Android is a hypervisor guest, a virtual composer/display backend may pass buffers to a host compositor. The host may own the physical DPU, display driver and panel. Guest display information alone cannot prove the physical panel or DPU identity.
 
@@ -408,7 +408,7 @@ Kernel logs and debug interfaces may be restricted. Names vary. A connector's mo
 ### BSP searches
 
 ```bash
-rg -n -i 'sa8195|qcom,.*(mdss|sde|dpu)|qcom,mdss-dsi-panel-name' \
+rg -n -i 'qcom,.*(mdss|sde|dpu)|qcom,mdss-dsi-panel-name' \
   --glob '*.dts' --glob '*.dtsi'
 
 rg -n 'sde_hw_catalog_init|SDE_HW_VER_|hw_rev|dpu_hw_catalog' \
