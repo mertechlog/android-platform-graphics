@@ -1,6 +1,6 @@
 # Android Graphics Architecture: Application to Physical Display
 
-A component reference for Android 15 graphics, with an editable Mermaid diagram, process/thread placement, buffer ownership, synchronization, composition examples and source paths.
+A component reference for Android graphics, with an diagram, process/thread placement, buffer ownership, synchronization, composition examples and source paths.
 
 ## 1. Scope and reading rules
 
