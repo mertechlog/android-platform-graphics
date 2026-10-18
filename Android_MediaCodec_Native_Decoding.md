@@ -1,6 +1,6 @@
 # Android video decoding: MediaCodec, native libraries and services
 
-Scope: normal online MP4 video playback to a Surface, focusing on the **Codec2 decoding stack**. Library mappings below were checked against AOSP `android-15.0.0_r16`; vendor binaries, service names and IPC versions vary by product. The reference remains [VideoPlayerActivity.java](https://github.com/mertechlog/android-platform-graphics/blob/main/sample/VideoPlayerActivity.java).
+Scope: normal online MP4 video playback to a Surface, focusing on the **Codec2 decoding stack**. Library mappings below were checked against AOSP vendor binaries, service names and IPC versions vary by product. The reference remains [VideoPlayerActivity.java](https://github.com/mertechlog/android-platform-graphics/blob/main/sample/VideoPlayerActivity.java).
 
 ## 1. Application context — briefly
 
